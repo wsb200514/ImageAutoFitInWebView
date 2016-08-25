@@ -21,11 +21,11 @@
     UIWebView *webView=[[UIWebView alloc]initWithFrame:self.view.bounds];
   
 //  1、本地html资源测试
-  NSString *path=[[NSBundle mainBundle]pathForResource:@"test" ofType:@"html"];
-  [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:path]]];
+//  NSString *path=[[NSBundle mainBundle]pathForResource:@"test" ofType:@"html"];
+//  [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:path]]];
     
 //  2、URL网址资源测试
-//    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://gb.wallpapersking.com/top/class108/15041/14eec4d8b4bf1fe0.htm"]]];
+    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://gb.wallpapersking.com/top/class108/15041/14eec4d8b4bf1fe0.htm"]]];
     
     [self.view addSubview:webView];
     webView.delegate=self;
